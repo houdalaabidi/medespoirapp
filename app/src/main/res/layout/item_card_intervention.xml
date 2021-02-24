@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:background="@android:color/white"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground"
+    app:cardElevation="3dp">
+    <LinearLayout
+        android:backgroundTint="@color/colorGold"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:contentDescription="image"
+            android:id="@+id/image_intervention"
+            android:scaleType="centerCrop"
+            android:layout_width="150dp"
+            android:layout_height="90dp" />
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+            android:layout_margin="5dp"
+            android:background="@color/colorGold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/desc_intervention"
+            android:layout_marginLeft="-3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:text="@string/interventions_visage_desc"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp" />
+
+    <Button
+        android:id="@+id/duo_view_footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/duo_shape_rectangled_rounded_color_accent"
+        android:gravity="center"
+        android:minWidth="@android:dimen/thumbnail_width"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_below="@id/duo_view_footer_text"
+        android:fontFamily="@font/nunitosansregular"
+        android:layout_marginLeft="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:text="@string/app_version"/>
+</RelativeLayout>

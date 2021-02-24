@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:id="@+id/ll_duo_view_header_text_sub_title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:fontFamily="@font/nunitosansregular"
+           android:id="@+id/duo_view_header_text_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="70dp"
+           android:layout_marginTop="32dp"
+           android:text="patient@gmail.com"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:textColor="@android:color/white"
+           android:textSize="16sp"
+           android:textStyle="bold"/>
+
+       <TextView
+       android:textSize="14sp"
+       android:fontFamily="@font/nunitosansregular"
+       android:id="@+id/duo_view_header_text_sub_title_2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/duo_view_header_text_title"
+       android:layout_marginLeft="90dp"
+       android:text="John Doe"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:textColor="@android:color/white"
+       android:textStyle="italic"/>
+       <TextView
+           android:textSize="12sp"
+           android:fontFamily="@font/nunitosansregular"
+           android:id="@+id/duo_view_header_text_sub_title_3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/duo_view_header_text_sub_title_2"
+           android:layout_marginLeft="90dp"
+           android:text=""
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="@android:color/white"
+           android:textStyle="italic"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll_duo_view_header_text_sub_title"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="0.5dp"
+        android:background="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp" />
+</RelativeLayout>

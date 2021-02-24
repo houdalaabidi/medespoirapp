@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:background="@drawable/bg_compte_rendu"
+android:layout_marginLeft="20dp"
+android:layout_marginRight="20dp"
+android:layout_marginTop="10dp"
+android:baselineAligned="false" android:orientation="horizontal"
+android:layout_height="100dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/bg_reclamation_time"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+            android:textColor="@android:color/white"
+            android:id="@+id/day_reclamation"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+            android:textColor="@android:color/white"
+            android:id="@+id/date_reclamation"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layout_weight="4"
+    android:layout_width="0dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVRegular
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/cost_devis"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"/>
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVRegular
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/status_reclamation"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGold"
+            android:textSize="14sp"/>
+        <LinearLayout
+            android:id="@+id/button_details_reclamation"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:background="@drawable/button_appel_intervention"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="@string/reclamation_details"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>

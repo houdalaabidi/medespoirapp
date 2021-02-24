@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Medespoir</string>
+    <string name="navigation_drawer_open"> open drawer </string>
+    <string name="navigation_drawer_close"> close drawer </string>
+
+    <string name="article_cat_1"> A la une</string>
+    <string name="more"><![CDATA[Voir plus >>]]></string>
+    <string name="interventions_visage">Chirurgie Visage</string>
+    <string name="interventions_visage_desc">-Linfting visage</string>
+    <string name="interventions_seins">Chirurgie Seins</string>
+    <string name="interventions_silhouette">Chirurgie Silhouette</string>
+    <string name="interventions_dentaire">Dentaire</string>
+    <string name="interventions_peau">Chirurgie Peau</string>
+    <string name="in_vitro">In Vitro</string>
+    <string name="intervention_chirurgie_yeux">Chirurgie Yeux</string>
+    <string name="chirurgie_intime">Chirurgie Intime</string>
+    <string name="interventions_obesite">Obésité</string>
+    <string name="medecine_esthetique">Medecine Esthètique</string>
+    <string name="nos_solutions">Nos Solutions</string>
+    <string name="questionss">Une Question ?</string>
+    <string name="appel_text">Nous Appeler via l\'application</string>
+    <string name="submit">Chat</string>
+    <string name="devis_text">Demander un Devis</string>
+    <string name="inscription">S\'inscrire</string>
+    <string name="connexion">Se Connecter</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="keep_signedIn">Keep me Signed in</string>
+    <string name="forget_pw">Forgot Password ?</string>
+    <string name="user_name"><![CDATA[Nom & Prénom]]></string>
+    <string name="register">S\'inscrire</string>
+    <string name="reset_pw">Reset your Password</string>
+    <string name="new_pwd">New password</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="confirm_pwd">Confirm your password</string>
+    <string name="button_assisatance"><![CDATA[Assistance & Post Opératoire]]></string>
+    <string name="compte_rendu_label">Compte Rendu opératoire</string>
+    <string name="reclamation_label">Mes Réclamations</string>
+    <string name="new_reclamation">Nouvelle Réclamation</string>
+    <string name="reclamation_details">Détails</string>
+    <string name="send_button">Envoyer</string>
+    <string name="label_programm">Votre Programme</string>
+    <string name="devis_label">Mes Devis</string>
+    <string name="default_notification_channel_id">205</string>
+    <string name="new_devis">Nouveau devis</string>
+    <string name="no_connexion">Pas de connexion internet , Vérifiez votre connexion SVP !</string>
+    <string name="no_actualities">Pas d\'actualité !</string>
+    <string name="no_programs">Pas de programme pour ce jour !</string>
+    <string name="no_operations">Pas d\'opérations !</string>
+    <string name="no_compte_rendu">Pas de compte rendu !</string>
+    <string name="no_reclamations">Pas de reclamation !</string>
+    <string name="operation_souhaitee">Opération(s) souhaitée(s)</string>
+    <string name="extras">Extra(s)</string>
+    <string name="prix_total">Prix Total</string>
+    <string name="infos_supp">Informations supplémentaires</string>
+    <string name="decliner">Décliner</string>
+    <string name="accepter">Accepter</string>
+    <string name="mon_profil">Mon Profil</string>
+    <string name="edit_profil">Modifier le profil</string>
+    <string name="notifs">Preferences notifications</string>
+    <string name="edit_notif">Recevoir des notifications</string>
+    <string name="mentions_legales">Mentions Légales</string>
+    <string name="politique_conf">Politique de confidentialité</string>
+    <string name="condition_utilisation">Conditions générales d\'utilisation</string>
+    <string name="deconnexion">Déconnexion</string>
+    <string name="title_reclmation">Titre de la réclamation</string>
+    <string name="no_titles">Liste des titres vide !</string>
+    <string name="no_articles">Liste des articles vide !</string>
+    <string name="no_priorities">Liste des priorités vide !</string>
+    <string name="priorite_reclmation">Priorité de la réclamation</string>
+    <string name="article_cat_2">Actualités Medespoir</string>
+    <string name="no_devis">Liste des demandes devis Vide !</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="mail_user">Email utilisateur</string>
+    <string name="rides">Rides</string>
+    <string name="text_rides">Les Rides du visage sont sans aucun doute l\'un des principaux signes du vieillissement cutané.\nLes rides du visage apparaissent, dès l\'âge de trente ans, dans des zones caractéristiques.</string>
+    <string name="renseignement">Vous souhaitez avoir plus de renseignements ou demander un devis ?</string>
+    <string name="titre_rec">Titre Réclamation</string>
+    <string name="date_rec">06 / 11 / 2020</string>
+    <string name="loreomipsuim">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut quam blandit, congue tellus ut, fermentum quam. Curabitur ac nisi nunc. Integer faucibus mollis tincidunt. In mattis ut quam vitae molestie</string>
+    <string name="priorite">"Priorité : "</string>
+    <string name="status">"Statut : "</string>
+    <string name="mesfichiers">Mes Fichiers</string>
+    <string name="devis">"4000 $ "</string>
+    <string name="choix_priorite">Choisissez la priorité de votre Réclamation</string>
+    <array name="menuOptions">
+
+        <item>Medespoir</item>
+        <item>Messages</item>
+        <item>Devis</item>
+        <item>Réclamation et post opératoire</item>
+        <item>Medespoir TV</item>
+        <item>Medespoir Shop</item>
+        <item>Paramètres</item>
+
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

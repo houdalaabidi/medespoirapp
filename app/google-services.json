@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "858065912686",
+    "firebase_url": "https://medespoir-default-rtdb.firebaseio.com",
+    "project_id": "medespoir",
+    "storage_bucket": "medespoir.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858065912686:android:f15c4ab9369f98dc6eb77f",
+        "android_client_info": {
+          "package_name": "com.touchlink.medespoir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858065912686-ffm4gflttvetf6vt311bu04e335q4bva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.touchlink.medespoir",
+            "certificate_hash": "09a0e1314fd6bc1fd48517a2a1c8855e73409fb2"
+          }
+        },
+        {
+          "client_id": "858065912686-7i8rjrfj6d72ba7ueh9cmomi5d1erl74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg71WIdmM5VIbnIlKgukxQxGd1T_CsHv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858065912686-7i8rjrfj6d72ba7ueh9cmomi5d1erl74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:foreground="?android:selectableItemBackground"
+    app:cardElevation="20dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:contentDescription="image"
+            android:id="@+id/image_article_full"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:src="@drawable/slid_app_medespoir"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                android:id="@+id/article_title_full"
+            android:layout_marginLeft="15dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGold"
+            android:text="article title"/>
+            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVRegular
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp"
+                android:id="@+id/date_article_full"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="12/08/2020"/>
+
+            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVLight
+                android:id="@+id/article_desc_full"
+                android:textSize="12sp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius egestas turpis quis consequat."/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

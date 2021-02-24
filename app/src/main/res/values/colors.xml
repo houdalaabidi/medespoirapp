@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name = "colorGold">#ca994c</color>
+    <color name="colorDarkGold">#b6843d</color>
+    <color name = "colorBlack">#1F212E</color>
+    <color name="colorTransparentBlack" >#801F212E</color>
+    <color name="transparent_white" >#301F212E</color>
+    <color name="colorGrey" >#F5F5F5F5</color>
+    colorGrey
+</resources>

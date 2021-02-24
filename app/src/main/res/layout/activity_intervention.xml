@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MVP.views.ui.activities.InterventionActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBlack"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:contentDescription="image"
+                android:layout_centerInParent="true"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:src="@drawable/logo_medespoir"/>
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+   <LinearLayout
+       android:background="@android:color/white"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3">
+       <LinearLayout
+           android:background="@color/colorDarkGold"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:layout_gravity="center"
+               android:textColor="@android:color/white"
+               android:textSize="18sp"
+               android:text="@string/rides"
+               android:layout_height="wrap_content"
+               android:layout_margin="15dp"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_marginTop="-13dp"
+           android:elevation="5dp"
+           android:background="@drawable/bg_desc_intervention"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVRegular
+               android:textSize="12sp"
+               android:layout_width="match_parent"
+               android:layout_margin="15dp"
+               android:textColor="@color/colorBlack"
+               android:text="@string/text_rides"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+   </LinearLayout>
+
+            <!--            intervention visage  -->
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3">
+       <LinearLayout
+           android:background="@android:color/white"
+           android:layout_marginTop="20dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                   android:layout_weight="3"
+                   android:layout_margin="5dp"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="@string/nos_solutions"
+                   android:textSize="16sp"
+                   android:textColor="@color/colorDarkGold"/>
+               <LinearLayout
+                   android:layout_weight="1"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:baselineAligned="false" android:orientation="horizontal">
+                   <LinearLayout
+
+                       android:id="@+id/arrow_back_intervention"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1">
+                       <ImageView
+                           android:contentDescription="image"
+                           android:layout_marginRight="20dp"
+                           android:layout_width="15dp"
+                           android:layout_height="15dp"
+                           android:src="@drawable/arrow_back"
+                           android:layout_gravity="start"/>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:gravity="end"
+                       android:id="@+id/arrow_forward_intervention"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1">
+                       <ImageView
+                           android:contentDescription="image"
+                           android:layout_marginRight="10dp"
+                           android:layout_width="15dp"
+                           android:layout_height="15dp"
+                           android:src="@drawable/arrow_forward"
+                           android:layout_gravity="center"/>
+                   </LinearLayout>
+               </LinearLayout>
+           </LinearLayout>
+
+
+       </LinearLayout>
+       <androidx.recyclerview.widget.RecyclerView
+           android:background="@android:color/white"
+           android:id="@+id/rv_intervention"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_gravity="center"
+       android:gravity="bottom"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2.5">
+       <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+           android:background="@android:color/white"
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/questionss"
+           android:textSize="16sp"
+           android:textColor="@color/colorDarkGold"/>
+
+       <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+           android:background="@android:color/white"
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/renseignement"
+           android:textSize="12sp"
+           android:textColor="@color/colorBlack"/>
+       <LinearLayout
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:background="@drawable/button_appel_intervention"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:contentDescription="image"
+               android:layout_width="15dp"
+               android:layout_height="15dp"
+               android:src="@drawable/phone_icon"/>
+           <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+               android:layout_width="wrap_content"
+               android:layout_margin="10dp"
+               android:textSize="14sp"
+               android:textColor="@android:color/white"
+               android:layout_height="wrap_content"
+               android:text="@string/appel_text"/>
+       </LinearLayout>
+   </LinearLayout>
+
+    <ImageView
+        android:elevation="10dp"
+        android:backgroundTint="@android:color/white"
+        app:borderWidth="0dp"
+        app:maxImageSize="35dp"
+        android:id="@+id/fab_intervention"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/message_icon"
+        android:contentDescription="@string/submit"
+        android:layout_margin="16dp" />
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MVP.views.ui.activities.InterventionDetailsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBlack"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:contentDescription="image"
+                android:layout_centerInParent="true"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:src="@drawable/logo_medespoir"/>
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_alignParentStart="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:background="@color/colorDarkGold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:text="Lifting visage"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:background="@drawable/bg_details_intervention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            app:expansion_headerIndicator="@id/headerIndicator1"
+                            app:expansion_layout="@id/expansionLayout1"
+                            app:expansion_toggleOnClick="true">
+
+                            <ImageView
+                                android:contentDescription="image"
+                                android:adjustViewBounds="true"
+                                android:id="@+id/headerIndicator1"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_width="wrap_content"
+                                app:srcCompat="@drawable/arrow_down" />
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorGold"
+                                android:text="Technique"/>
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/expansionLayout1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <!-- CONTENT -->
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVLight
+
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="12sp"
+                                android:text="Le lifting du visage que vous allez réaliser en Tunisie est une technique chirurgicale extrêmement populaire et figure dans le top 10 des procédures esthétiques les plus connues dans le monde."/>
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:background="@drawable/bg_details_intervention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            app:expansion_headerIndicator="@id/headerIndicator2"
+                            app:expansion_layout="@id/expansionLayout2"
+                            app:expansion_toggleOnClick="true">
+
+
+                            <ImageView
+                                android:contentDescription="image"
+                                android:adjustViewBounds="true"
+                                android:id="@+id/headerIndicator2"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_width="wrap_content"
+                                app:srcCompat="@drawable/arrow_down" />
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorGold"
+                                android:text="Séjour"/>
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/expansionLayout2"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <!-- CONTENT -->
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVLight
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="12sp"
+                                android:text="Le lifting du visage que vous allez réaliser en Tunisie est une technique chirurgicale extrêmement populaire et figure dans le top 10 des procédures esthétiques les plus connues dans le monde."/>
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:background="@drawable/bg_details_intervention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            app:expansion_headerIndicator="@id/headerIndicator3"
+                            app:expansion_layout="@id/expansionLayout3"
+                            app:expansion_toggleOnClick="true">
+
+
+                            <ImageView
+                                android:contentDescription="image"
+                                android:adjustViewBounds="true"
+                                android:id="@+id/headerIndicator3"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_width="wrap_content"
+                                app:srcCompat="@drawable/arrow_down" />
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorGold"
+                                android:text="Résultats"/>
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/expansionLayout3"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <!-- CONTENT -->
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVLight
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="12sp"
+                                android:text="Le lifting du visage que vous allez réaliser en Tunisie est une technique chirurgicale extrêmement populaire et figure dans le top 10 des procédures esthétiques les plus connues dans le monde."/>
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:background="@drawable/bg_details_intervention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            app:expansion_headerIndicator="@id/headerIndicator4"
+                            app:expansion_layout="@id/expansionLayout4"
+                            app:expansion_toggleOnClick="true">
+
+
+                            <ImageView
+                                android:contentDescription="image"
+                                android:adjustViewBounds="true"
+                                android:id="@+id/headerIndicator4"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_width="wrap_content"
+                                app:srcCompat="@drawable/arrow_down" />
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorGold"
+                                android:text="Prix"/>
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/expansionLayout4"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+                            <!-- CONTENT -->
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVLight
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="12sp"
+                                android:text="Le lifting du visage que vous allez réaliser en Tunisie est une technique chirurgicale extrêmement populaire et figure dans le top 10 des procédures esthétiques les plus connues dans le monde."/>
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/questionss"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorDarkGold"/>
+
+                    <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                        android:layout_marginRight="5dp"
+                        android:background="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vous souhaitez avoir plus de renseignements ou demander un devis ?"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorBlack"/>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_appel_intervention"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:contentDescription="image"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/phone_icon"/>
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                                android:layout_width="wrap_content"
+                                android:layout_margin="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/white"
+                                android:layout_height="wrap_content"
+                                android:text="@string/appel_text"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/button_devis"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_devis"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                                android:layout_width="wrap_content"
+                                android:layout_margin="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/white"
+                                android:layout_height="wrap_content"
+                                android:text="@string/devis_text"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <ImageView
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:elevation="10dp"
+            android:backgroundTint="@android:color/white"
+            app:borderWidth="0dp"
+            app:maxImageSize="35dp"
+            android:id="@+id/fab_intervention_details"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/message_icon"
+            android:contentDescription="@string/submit"
+            android:layout_margin="16dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

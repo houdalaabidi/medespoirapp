@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVRegular
+        android:layout_marginLeft="10dp"
+        android:id="@+id/label_bilan_operatoire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/colorDarkGold"
+
+        android:layout_gravity="center"
+        android:gravity="start"
+        android:layout_marginTop="10dp"/>
+    <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVRegular
+        android:id="@+id/bilan_operatoire_desc"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/colorBlack"
+        android:text="@string/loreomipsuim"
+        android:layout_gravity="center"
+        android:gravity="start"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

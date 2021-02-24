@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.touchlink.medespoir.MVP.views.ui.fragments.DetailsReclamationFragment">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_connectivity_dialog"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="20dp"
+                android:id="@+id/loader2"
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="no_connexion.json"
+                app:lottie_loop="true" />
+            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVLight
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/no_connexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_reclamation_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                android:id="@+id/title_reclamation"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/titre_rec"/>
+            <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVRegular
+                android:id="@+id/date_reclamation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_rec"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_compte_rendu">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                        android:id="@+id/priorite_reclamation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/priorite"
+                        android:textColor="@color/colorGold"
+                        android:textSize="16sp"/>
+                    <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVLight
+                        android:id="@+id/desc_reclamation"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/loreomipsuim"/>
+                    <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/statut_reclamation"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:text="@string/status"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                    android:id="@+id/label_files"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mesfichiers"
+                    android:textColor="@color/colorGold"
+                    android:textSize="16sp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="@android:color/white"
+                    android:id="@+id/rv_fichiers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="gone"
+            android:id="@+id/loader"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loader.json"
+            app:lottie_loop="true" />
+
+
+
+    <ImageView
+        android:elevation="10dp"
+        android:backgroundTint="@android:color/white"
+        app:borderWidth="0dp"
+        app:maxImageSize="35dp"
+        android:id="@+id/fab_reclamation_details"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/message_icon"
+        android:contentDescription="@string/submit"
+        android:layout_margin="16dp" />
+</FrameLayout>

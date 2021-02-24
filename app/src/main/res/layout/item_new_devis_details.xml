@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/rounded_devis_details_item"
+    android:baselineAligned="false" android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content">
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVLight
+            android:id="@+id/operation"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:textSize="14sp"
+            android:text="Liposuccion"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorBlack"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content">
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVLight
+            android:id="@+id/prix"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:textSize="14sp"
+            android:text="@string/devis"/>
+    </LinearLayout>
+
+</LinearLayout>

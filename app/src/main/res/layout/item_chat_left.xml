@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal">
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVRegular
+            android:id="@+id/created_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGold"
+            android:padding="5dp"
+            android:textSize="14sp"
+           />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:contentDescription="image"
+            android:id="@+id/iv_admin_profil"
+            android:layout_width="40dp"
+            android:src="@drawable/left_user"
+            android:layout_height="40dp" />
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVRegular
+            android:id="@+id/show_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_admin_profil"
+
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="@drawable/background_chat_left"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

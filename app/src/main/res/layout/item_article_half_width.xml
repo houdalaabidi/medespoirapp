@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:foreground="?android:selectableItemBackground"
+    app:cardElevation="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image_article_half"
+            android:layout_alignParentStart="true"
+            android:contentDescription="image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/slid_app_medespoir"
+            android:scaleType="centerCrop"/>
+       <LinearLayout
+           android:layout_alignParentBottom="true"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+               android:id="@+id/article_title"
+               android:gravity="center_horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/white"
+
+               android:textSize="16sp"/>
+           <LinearLayout
+               android:layout_gravity="center_horizontal"
+               android:layout_marginBottom="10dp"
+               android:gravity="center_horizontal"
+               android:background="@drawable/bg_card_article_date"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                   android:layout_margin="2dp"
+                   android:id="@+id/date_article"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@android:color/white"
+                   android:textSize="12sp"
+                   />
+
+           </LinearLayout>
+       </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

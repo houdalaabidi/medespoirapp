@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MVP.views.ui.activities.ProgramActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@color/colorBlack"
+            android:gravity="center"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:contentDescription="image"
+                        android:id="@+id/program_button_back"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/button_back" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:contentDescription="image"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/logo_medespoir" />
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/label_programm"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/white"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar
+            android:id="@+id/program_calendar"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:primaryColor="@android:color/white"
+            app:textColor="@color/colorBlack"
+            app:selectedItem_textColor="@android:color/white"
+            app:todayItem_textColor="@color/colorGold"
+            app:todayItem_background="@drawable/circle_gold_stroke_background"
+            app:selectedItem_background="@drawable/circle_gold_solid_background"
+            app:buttonLeft_drawableTintColor="@android:color/white"
+            app:buttonRight_drawableTintColor="@android:color/white"
+            app:expandIconColor="@color/colorGold">
+        </com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar>
+       <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+           android:id="@+id/swipe_container_programs"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <androidx.recyclerview.widget.RecyclerView
+               android:visibility="visible"
+               android:background="@android:color/white"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/recycler_view_pgrogram"/>
+
+       </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="gone"
+            android:id="@+id/loader"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loader.json"
+            app:lottie_loop="true" />
+        <com.touchlink.medespoir.MVP.views.ui.customviews.MedEspoirTVBold
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/text_no_programs"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/no_programs"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:elevation="10dp"
+        android:backgroundTint="@android:color/white"
+        app:borderWidth="0dp"
+        app:maxImageSize="35dp"
+        android:id="@+id/fab_program"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/message_icon"
+        android:contentDescription="@string/submit"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

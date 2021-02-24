@@ -1,0 +1,58 @@
+type Query {
+  User("Resolves User using its email." email: String!): User
+  Client("Resolves Client using its id." name: String!): Client
+}
+
+type User {
+  id: String!
+  email: String!
+  password: String!
+  roles: [String!]
+  username: [String!]
+}
+
+type Client {
+  id: Int!
+  name: String!
+  secondeName: String!
+  phoneNumber: Int!
+  age: Int!
+  adresse: String!
+  User: User!
+}
+
+type Mutation {
+  NewClient(input: ClientInput!): MutationSuccess
+  NewUser(input: UserInput!): MutationSuccess
+  LoginUser(input: LoginInput!): MutationSuccess
+}
+
+input ClientInput {
+  id: Int!
+  name: String!
+  secondeName: String!
+  phoneNumber: Int!
+  age: Int!
+  adresse: String!
+}
+
+type MutationSuccess {
+  content: String!
+}
+
+input UserInput {
+  username: String!
+  password: String!
+  email: String!
+}
+
+input LoginInput {
+  username: String!
+  password: String!
+}
+
+schema {
+  subscription: subscription
+  query: Query
+  mutation: Mutation
+}
